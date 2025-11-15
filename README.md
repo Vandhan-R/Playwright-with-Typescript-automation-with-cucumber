@@ -83,5 +83,4 @@ All logic is separated using Page Object Model, making the project clean, readab
 
 1. Add HTML/JSON test reports
 2. Add tags (@smoke, @regression)
-3. Add CI pipeline (GitHub Actions)
-4. Add reusable hooks for browser setup
+3. Add reusable hooks for browser setup
