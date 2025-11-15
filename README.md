@@ -63,34 +63,13 @@ Feature: Placing Order in an Ecommerce Platform
     And the user proceeds with payment option and adds the safepay username "Tester123" and password "Qwerty@1234"
     Then after user completes the payment order placed success message should be displayed
 
-# Project Structure
-
-    ├── features/
-│   └── order.feature
-├── step-definitions/
-│   └── orderSteps.ts
-├── Pages/
-│   ├── login.ts
-│   ├── ProductDashboard.ts
-│   ├── CartPage.ts
-│   ├── PaymentDetails.ts
-│   └── OrderSuccess.ts
-├── package.json
-├── tsconfig.json
-├── cucumber.js
-└── README.md
-
-
 # How to Run the Tests
 
-1. Install dependencies
-npm install
+1. Install dependencies : npm install
+    
+2. Install Playwright browsers : npx playwright install
 
-2. Install Playwright browsers
-npx playwright install
-
-3. Run Cucumber tests
-npx cucumber-js
+3. Run Cucumber tests : npx cucumber-js
 
 # Tech Used
 Playwright – Web automation
@@ -100,7 +79,7 @@ POM – Clean separation of test logic
 
 # Possible Improvements
 
-Add HTML/JSON test reports
-Add tags (@smoke, @regression)
-Add CI pipeline (GitHub Actions)
-Add reusable hooks for browser setup
+1. Add HTML/JSON test reports
+2. Add tags (@smoke, @regression)
+3. Add CI pipeline (GitHub Actions)
+4. Add reusable hooks for browser setup
