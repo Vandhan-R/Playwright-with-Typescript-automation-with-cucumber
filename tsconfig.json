@@ -5,6 +5,8 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "strict": false,
+
+    //  THIS FIXES YOUR ERROR
     "allowImportingTsExtensions": true
   },
 
