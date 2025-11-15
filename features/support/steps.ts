@@ -9,8 +9,8 @@ import {OrderSuccessPage} from '../../Pages/OrderSuccess.ts'
        
   Given('the user logs in with username {string} and password {string}', async function (this:any, UserName :string, Password:string)
    {
-       const browser=await chromium.launch() // gets browser object
-       const context= await browser.newContext()
+       this.browser = await chromium.launch();
+       const context= await this.browser.newContext()
        this.page=await context.newPage()
 
        const login= new LoginPage(this.page)    
@@ -58,4 +58,5 @@ When('the user enters shipping details:', async function ( this:any,dataTable )
    {
          const ordrsuces= new OrderSuccessPage(this.page)
          await ordrsuces.ordersuccess()
+         await this.browser.close();
     });
