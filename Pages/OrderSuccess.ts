@@ -17,6 +17,7 @@ export class OrderSuccessPage
     {
     await expect(this.orderpaymenttext).toBeVisible()
     await this.orderidlable.isVisible()
+    await this.page.close()
     }
 
 }

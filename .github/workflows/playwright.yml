@@ -1,29 +1,38 @@
-name: Playwright Cucumber Tests
+name: Run Playwright & Cucumber Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
-  test:
+  test-all:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
 
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install chromium --with-deps
 
-      - name: Run Cucumber tests
+      # -------------------------------------
+      # RUN CUCUMBER TESTS
+      # -------------------------------------
+      - name: Run Cucumber Tests
         run: npx cucumber-js
+
+      # -------------------------------------
+      # RUN PLAYWRIGHT .spec.ts FILES
+      # -------------------------------------
+      - name: Run Playwright Tests
+        run: npx playwright test
