@@ -1,4 +1,4 @@
-[![Playwright Tests](https://github.com/Vandhan-R/Playwright-with-Typescript-automation-with-cucumber/actions/workflows/playwright.yml/badge.svg)](https://github.com/Vandhan-R/Playwright-with-Typescript-automation-with-cucumber/actions/workflows/playwright.yml)
+[![Run Playwright & Cucumber Tests](https://github.com/Vandhan-R/Playwright-with-Typescript-automation-with-cucumber/actions/workflows/playwright.yml/badge.svg)](https://github.com/Vandhan-R/Playwright-with-Typescript-automation-with-cucumber/actions/workflows/playwright.yml)
 
 # My Playwright + TypeScript + Cucumber Project
 
