@@ -73,6 +73,8 @@ All logic is separated using Page Object Model, making the project clean, readab
 
 3. Run Cucumber tests : npx cucumber-js
 
+4. Run Playwright tests: npx playwright test
+
 # Tech Used
 1. Playwright – Web automation
 2. TypeScript – Type-safe test development
