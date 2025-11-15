@@ -58,8 +58,8 @@ All logic is separated using Page Object Model, making the project clean, readab
 - Then user verifies that the cart page has total text "TOTAL:"
 - Then the users checkouts and order payment, order summary details should be displayed
 - When the user enters shipping details:
-      | UserName  | LastName | PhoneNumber | City        | Address       | State   | Postal |
-      | Tester123 | Tez      | 28765432456 | Fayetteville| 31 Spooner St | New York| 02108  |
+    - | UserName  | LastName | PhoneNumber | City        | Address       | State   | Postal |
+    - | Tester123 | Tez      | 28765432456 | Fayetteville| 31 Spooner St | New York| 02108  |
 - And the user proceeds with payment option and adds the safepay username "Tester123" and password "Qwerty@1234"
 - Then after user completes the payment order placed success message should be displayed
 
